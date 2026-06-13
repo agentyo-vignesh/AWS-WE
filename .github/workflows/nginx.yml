@@ -21,4 +21,5 @@ jobs:
           echo "Deploying to Ngihhhnx..."
           # Add your deployment commands here, e.g., copying files, restarting services, etc.
           # Example:
+          whoami
           scp -r ./index.html /var/www/html/index.nginx-debian.html
