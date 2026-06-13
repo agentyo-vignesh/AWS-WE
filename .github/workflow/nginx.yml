@@ -1,0 +1,24 @@
+name: my-deployment
+
+on:
+  push:
+    branches: [ main ]
+    workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: vignehs
+        run: |
+          echo "Deploying to Nginx..."
+          # Add your deployment commands here, e.g., copying files, restarting services, etc.
+          # Example:
+          scp -r ./index.html /usr/share/nginx/html/
