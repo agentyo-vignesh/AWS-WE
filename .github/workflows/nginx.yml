@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: vignehs
         run: |
-          echo "Deploying to Nginx..."
+          echo "Deploying to Ngihhhnx..."
           # Add your deployment commands here, e.g., copying files, restarting services, etc.
           # Example:
           scp -r ./index.html /usr/share/nginx/html/
